@@ -1,0 +1,275 @@
+body {
+  background: #141414;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: #6D6D6D;
+  opacity: 0;
+  animation: fade-in 500ms ease 200ms 1 forwards;
+}
+body h1 {
+  color: #fff;
+  font-size: 50px;
+}
+body a {
+  padding: 5px 15px;
+  color: #6D6D6D;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #6D6D6D;
+  transition: all 300ms ease;
+}
+body a:hover {
+  color: #EBECEC;
+  border: 1px solid #EBECEC;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.logo {
+  width: 110px;
+  height: 30px;
+  margin: 15px 60px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2000px-Netflix_2015_logo.svg.png");
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.profile {
+  width: 150px;
+}
+.profile-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 50px auto;
+}
+.profile-icon {
+  width: 150px;
+  height: 150px;
+  border: 6px solid #1f1f1f;
+  transition: all 300ms ease;
+}
+.profile-name {
+  margin: 20px 0;
+  line-height: 1.25em;
+  transition: all 300ms ease;
+}
+
+.profile:hover .profile-icon {
+  border: 6px solid #EBECEC;
+}
+
+.profile:hover .profile-name {
+  color: #EBECEC;
+}
+
+.profile1 #left-brow {
+  transform-origin: center 80%;
+  animation: raise 10s ease-in-out infinite;
+}
+.profile1 #sunglasses {
+  transform-origin: center 100%;
+  animation: tilt 10s 250ms ease infinite;
+}
+.profile1 #mustache {
+  transform-origin: center 90%;
+  animation: mustache 10s 0ms ease infinite;
+}
+
+@keyframes raise {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  10% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  20% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  25% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes tilt {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  10% {
+    transform: translateY(-2px) rotate(5deg);
+  }
+  20% {
+    transform: translateY(-2px) rotate(5deg);
+  }
+  25% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes mustache {
+  20% {
+    transform: translateY(0px) scale(1);
+  }
+  30% {
+    transform: translateY(4px) rotate(-3deg) scale(1.03);
+  }
+  40% {
+    transform: translateY(0px) scale(1);
+  }
+}
+.profile2 #left-pupil, .profile2 #right-pupil {
+  animation: side-to-side 10s ease-in-out infinite alternate;
+}
+.profile2 #left-eye-top, .profile2 #right-eye-top {
+  transform-origin: center bottom;
+  animation: wide-open 10s ease-in-out infinite alternate;
+}
+.profile2 #bottom-beak, .profile2 #gillard {
+  transform-origin: center top;
+  animation: chew 20s ease-in-out infinite;
+}
+.profile2 #hair {
+  animation: hair 4s ease infinite alternate;
+}
+
+@keyframes side-to-side {
+  0% {
+    transform: translateX(0px);
+  }
+  5% {
+    transform: translateX(-5px);
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  35% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  45% {
+    transform: translateX(0px);
+  }
+}
+@keyframes wide-open {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1, 0);
+  }
+  42% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes chew {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  2% {
+    transform: translateY(3px) rotate(-3deg);
+  }
+  4% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  6% {
+    transform: translateY(3px) rotate(-3deg);
+  }
+  8% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  10% {
+    transform: translateY(3px) rotate(-3deg);
+  }
+  12% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  14% {
+    transform: translateY(3px) rotate(0deg);
+  }
+  18% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  26% {
+    transform: translateY(15px);
+  }
+  78% {
+    transform: translateY(15px);
+  }
+  80% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@keyframes hair {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1, 0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.profile3 svg {
+  animation: bg-fade 10s ease infinite;
+}
+.profile3 svg #smile {
+  width: 100px;
+}
+
+@keyframes bg-fade {
+  0% {
+    background: #86A546;
+  }
+  40% {
+    background: #86A546;
+  }
+  45% {
+    background: #E09927;
+  }
+  55% {
+    background: #E09927;
+  }
+  60% {
+    background: #86A546;
+  }
+}
+.profile4 {
+  background-image: url("https://i.gyazo.com/aa72f20bdacb2e23beb7b065a6b43739.png");
+  background-size: cover;
+}
