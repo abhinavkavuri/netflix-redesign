@@ -31,7 +31,7 @@ Screens: <br>
 </div>
 
 initialize by clicking index.html in root directory and proceed further...
-https://i.postimg.cc/dtysbB19/Screenshot-8.png
+
 😃 happy coding 👨‍💻
 
 ---
